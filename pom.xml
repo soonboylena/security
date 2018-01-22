@@ -4,9 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.soonboylena</groupId>
-    <artifactId>security</artifactId>
+    <groupId>com.github.soonboylena.security</groupId>
+    <artifactId>man</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,6 +23,12 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
     </properties>
+
+    <modules>
+        <module>core</module>
+        <module>demo</module>
+        <module>browser</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
