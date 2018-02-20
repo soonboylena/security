@@ -1,12 +1,11 @@
 package com.github.soonboylena.security.core;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.github.soonboylena.security.core.properties.SecurityProperty;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+@Configuration
+@EnableConfigurationProperties(SecurityProperty.class)
 public class SecurityCoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SecurityCoreApplication.class, args);
-	}
 }

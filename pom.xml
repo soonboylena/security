@@ -24,6 +24,14 @@
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>core</module>
         <module>demo</module>
